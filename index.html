@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>2nd Task</title>
+  </head>
+  <body>
+    <!--Start Products Section-->
+    <section class="products-searching-container | pt-5 sec-spacing">
+      <div class="container">
+        <div class="row flex-row-reverse justify-content-end">
+          <div class="col-xl-3 col-6 mb-5 justify-content-self-start">
+            <form action="" id="price-form">
+              <div class="input-cotnainer | mb-4">
+                <label
+                  for="product-price-input"
+                  class="input-header fs-250 fw-semibold"
+                  >Price</label
+                >
+                <input
+                  type="number"
+                  placeholder="$1200"
+                  class="tough-input outline-0 py-2 border h-100 px-3 py-1 fs-100"
+                  maxlength="6"
+                  min="0"
+                  id="product-price-input"
+                  name="product-price"
+                />
+              </div>
+              <div class="input-cotnainer | mb-4">
+                <label
+                  for="product-price-input"
+                  class="input-header fs-250 fw-semibold"
+                  >Name</label
+                >
+
+                <input
+                  type="text"
+                  name="product-name"
+                  class="tough-input outline-0 py-2 border h-100 px-3 py-1 fs-100"
+                  id="product-name"
+                  class="product-name"
+                  placeholder="item 1"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-9 col-12 mb-5 mb-xl-0">
+            <div class="products-container bg-white p-4 text-center">
+              <div
+                class="pagination | d-flex align-items-center justify-content-center"
+              >
+                <div class="back-arrow arrow pointer" id="back-arrow">
+                  <i class="fa-solid fa-caret-left"></i>
+                </div>
+                <div
+                  class="pages-container d-flex mx-2"
+                  id="pages-container"
+                ></div>
+                <div class="forward-arrow arrow pointer" id="forward-arrow">
+                  <i class="fa-solid fa-caret-right"></i>
+                </div>
+              </div>
+
+              <div class="products-search-result | text-center sec-spacing">
+                <div id="empty-cart" class="d-none empty-cart">
+                  <p class="non-items-text">No Products Found! :(</p>
+                  <img src="imgs/animation_500_l8kbnird.gif" alt="empty cart" />
+                </div>
+
+                <div class="row" id="items-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Products Section-->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/jquery.slim.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="js/pagination/items.js"></script>
+    <script src="js/pagination/pagination.js"></script>
+  </body>
+</html>

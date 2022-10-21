@@ -1,0 +1,97 @@
+@import url("base.css");
+@import url("utilities.css");
+
+/*--Start General Style--*/
+body {
+    background-color: var(--clr-light-gray);
+}
+
+/*--End General Style--*/
+/*------------Start Products Container Style-------------*/
+.products-container {
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 8%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+}
+
+/*--Start Pagination Style--*/
+.pagination .page {
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid #D1D1D6;
+    font-weight: var(--fw-semibold);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 2px
+}
+
+.pagination .page.active,
+.pagination .page:hover {
+    background-color: var(--clr-accent);
+    color: white;
+    border: 0;
+}
+
+.pagination .arrow {
+    font-size:1.3rem;
+    color:var(--clr-accent)
+}
+/*--End Pagination Style--*/
+
+/*--Start Form Style--*/
+form select{
+    width: 100%;
+    border:1px solid var(--clr-light-gray);
+    padding: 4px;
+}
+/*--End Form Style--*/
+
+
+/*--Start Products Style--*/
+.products-search-result .product .circle {
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.products-search-result .product button {
+    transition: background-color 0.3s;
+    visibility: visible;
+    opacity: 1;
+    background-color:var(--clr-natural-dark);
+    color: white !important;
+}
+
+.products-search-result .product:hover .bttn {
+    background-color: var(--clr-accent);
+}
+
+.products-search-result .product .price {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-semibold);
+}
+
+.products-search-result .product .current-price {
+    color: var(--clr-accent);
+    font-size: clamp(0.9rem, 4.5vw, 1.1rem);
+}
+
+.products-search-result .product .old-price {
+    font-size: clamp(0.7rem, 2.8vw, 0.91rem);
+    text-decoration: line-through;
+}
+
+.products-search-result .empty-cart {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.products-search-result .empty-cart img {
+    width: 500px;
+}
+
+/*--End Products Style--*/

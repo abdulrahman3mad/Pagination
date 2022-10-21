@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,300&family=Rubik:wght@400;500&display=swap');
+
+:root {
+    --clr-primary: rgb(18, 26, 37);
+    --clr-accent: rgb(218, 17, 17);
+    --clr-accent-light: rgb(255, 193, 193);
+    --clr-natural-light: rgb(245, 245, 245);
+    --clr-natural-dark: rgb(161, 161, 161);
+    --clr-light-gray:#F5F5F5;
+
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Josefin Sans', sans-serif;
+    --ff-accent:"Rubik", sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+
+    --fs-100: 0.5rem;
+    --fs-150: 0.75rem;
+    --fs-200: 1rem;
+    --fs-250: 1.25rem;
+    --fs-300: 1.5rem;
+    --fs-350: 1.75rem;
+    --fs-400: 2rem;
+    --fs-450: 2.25rem;
+    --fs-500: 2.5rem;
+    --fs-550: 2.75rem;
+    --fs-600: 3rem;
+    --fs-650: 3.25rem;
+    --fs-700: 3.5rem;
+    --fs-750: 3.75rem;
+    --fs-800: 4rem;
+    --fs-850: 4.25rem;
+    --fs-900: 4.5rem;
+
+    --fs-body: var(--fs-200);
+    --fs-primary-heading: clamp(2rem, 8vw, var(--fs-900));
+    --fs-secondary-heading: clamp(1.2rem, 5vw, var(--fs-450));
+    --fs-page-heading: clamp(var(--fs-550), 5vw, var(--fs-750));
+    --fs-block-heading: clamp(1.1rem, 3.5vw, var(--fs-350));
+    --item-spacing:1.875rem;
+}
+
+
+body {
+    color: var(--clr-primary);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+}
+
+ul {list-style: none}
+
+p,
+ul,
+ol {
+    margin-bottom: 0
+}
+
+a {text-decoration: none !important}
